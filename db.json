@@ -1,256 +1,254 @@
 {
-    
-    "loadRouter":{
+    "loadRouter": {
         "modules": {
-    "01040000000000000000": {
-        "level": 2,
-        "logs": "1",
-        "mid": "01040000000000000000",
-        "mname": "平台角色",
-        "ordernum": 3,
-        "path": "",
-        "pmid": "01000000000000000000",
-        "router": "/role",
-        "state": "1",
-        "type": "URL",
-        "children": [
-            {
-                "level": 3,
-                "logs": "0",
-                "mid": "01040300000000000000",
-                "mname": "编辑",
-                "path": "/role/getRoleByRid/.*,/role/save",
-                "pmid": "01040000000000000000",
-                "router": "",
+            "01040000000000000000": {
+                "level": 2,
+                "logs": "1",
+                "mid": "01040000000000000000",
+                "mname": "平台角色",
+                "ordernum": 3,
+                "path": "",
+                "pmid": "01000000000000000000",
+                "router": "/role",
                 "state": "1",
-                "type": "HIDDEN"
-            },
+                "type": "URL",
+                "children": [
+                    {
+                        "level": 3,
+                        "logs": "0",
+                        "mid": "01040300000000000000",
+                        "mname": "编辑",
+                        "path": "/role/getRoleByRid/.*,/role/save",
+                        "pmid": "01040000000000000000",
+                        "router": "",
+                        "state": "1",
+                        "type": "HIDDEN"
+                    },
+                    {
+                        "level": 3,
+                        "logs": "0",
+                        "mid": "01040100000000000000",
+                        "mname": "查询",
+                        "path": "/role/query",
+                        "pmid": "01040000000000000000",
+                        "router": "",
+                        "state": "1",
+                        "type": "HIDDEN"
+                    },
+                    {
+                        "level": 3,
+                        "logs": "0",
+                        "mid": "01040400000000000000",
+                        "mname": "禁用",
+                        "path": "/role/setRoleState",
+                        "pmid": "01040000000000000000",
+                        "router": "",
+                        "state": "1",
+                        "type": "HIDDEN"
+                    },
+                    {
+                        "level": 3,
+                        "logs": "0",
+                        "mid": "01040200000000000000",
+                        "mname": "新增",
+                        "path": "/role/getModuleTree,/role/addRole",
+                        "pmid": "01040000000000000000",
+                        "router": "",
+                        "state": "1",
+                        "type": "HIDDEN"
+                    }
+                ]
+            }
+        },
+        "list": [
             {
-                "level": 3,
+                "level": 1,
                 "logs": "0",
-                "mid": "01040100000000000000",
-                "mname": "查询",
-                "path": "/role/query",
-                "pmid": "01040000000000000000",
-                "router": "",
+                "mid": "01000000000000000000",
+                "mname": "系统权限",
+                "ordernum": 0,
+                "path": "/auth/.*",
+                "pmid": "ROOT",
                 "state": "1",
-                "type": "HIDDEN"
-            },
-            {
-                "level": 3,
-                "logs": "0",
-                "mid": "01040400000000000000",
-                "mname": "禁用",
-                "path": "/role/setRoleState",
-                "pmid": "01040000000000000000",
-                "router": "",
-                "state": "1",
-                "type": "HIDDEN"
-            },
-            {
-                "level": 3,
-                "logs": "0",
-                "mid": "01040200000000000000",
-                "mname": "新增",
-                "path": "/role/getModuleTree,/role/addRole",
-                "pmid": "01040000000000000000",
-                "router": "",
-                "state": "1",
-                "type": "HIDDEN"
+                "type": "NODE",
+                "children": [
+                    {
+                        "level": 2,
+                        "logs": "1",
+                        "mid": "01010000000000000000",
+                        "mname": "用户管理",
+                        "ordernum": 1,
+                        "path": "",
+                        "pmid": "01000000000000000000",
+                        "router": "/user",
+                        "state": "1",
+                        "type": "URL",
+                        "children": [
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01010400000000000000",
+                                "mname": "查询权限",
+                                "path": "/user/query,/user/getUserRoles",
+                                "pmid": "01010000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01010500000000000000",
+                                "mname": "禁用",
+                                "path": "/user/setUserState",
+                                "pmid": "01010000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01010300000000000000",
+                                "mname": "新增修改权限",
+                                "path": "/user/save,/channel_subject/.*",
+                                "pmid": "01010000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01010100000000000000",
+                                "mname": "新增",
+                                "ordernum": 0,
+                                "path": "cmdAdd",
+                                "pmid": "01010000000000000000",
+                                "state": "0",
+                                "type": "BUTTON"
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "logs": "1",
+                        "mid": "01040000000000000000",
+                        "mname": "平台角色",
+                        "ordernum": 3,
+                        "path": "",
+                        "pmid": "01000000000000000000",
+                        "router": "/role",
+                        "state": "1",
+                        "type": "URL",
+                        "children": [
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01040300000000000000",
+                                "mname": "编辑",
+                                "path": "/role/getRoleByRid/.*,/role/save",
+                                "pmid": "01040000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01040100000000000000",
+                                "mname": "查询",
+                                "path": "/role/query",
+                                "pmid": "01040000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01040400000000000000",
+                                "mname": "禁用",
+                                "path": "/role/setRoleState",
+                                "pmid": "01040000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01040200000000000000",
+                                "mname": "新增",
+                                "path": "/role/getModuleTree,/role/addRole",
+                                "pmid": "01040000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "logs": "0",
+                        "mid": "01050000000000000000",
+                        "mname": "功能模块",
+                        "ordernum": 4,
+                        "path": "",
+                        "pmid": "01000000000000000000",
+                        "router": "/module",
+                        "state": "1",
+                        "type": "URL",
+                        "children": [
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01050400000000000000",
+                                "mname": "禁用",
+                                "path": "/module/setModuleState",
+                                "pmid": "01050000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01050500000000000000",
+                                "mname": "新增编辑",
+                                "path": "/module/save",
+                                "pmid": "01050000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            },
+                            {
+                                "level": 3,
+                                "logs": "0",
+                                "mid": "01050100000000000000",
+                                "mname": "查询",
+                                "path": "/module/query",
+                                "pmid": "01050000000000000000",
+                                "router": "",
+                                "state": "1",
+                                "type": "HIDDEN"
+                            }
+                        ]
+                    },
+                    {
+                        "level": 2,
+                        "logs": "0",
+                        "mid": "01070000000000000000",
+                        "mname": "ip白名单管理",
+                        "path": "/dashboard/authIp,/dashboard/getIpList,/dashboard/insertIp,/dashboard/updateIp",
+                        "pmid": "01000000000000000000",
+                        "router": "/lt/ipAuth",
+                        "state": "1",
+                        "type": "URL"
+                    }
+                ]
             }
         ]
-    }
-      
-        },
-          "list": [
-          {
-    "level": 1,
-    "logs": "0",
-    "mid": "01000000000000000000",
-    "mname": "系统权限",
-    "ordernum": 0,
-    "path": "/auth/.*",
-    "pmid": "ROOT",
-    "state": "1",
-    "type": "NODE",
-    "children": [
-        {
-            "level": 2,
-            "logs": "1",
-            "mid": "01010000000000000000",
-            "mname": "用户管理",
-            "ordernum": 1,
-            "path": "",
-            "pmid": "01000000000000000000",
-            "router": "/user",
-            "state": "1",
-            "type": "URL",
-            "children": [
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01010400000000000000",
-                    "mname": "查询权限",
-                    "path": "/user/query,/user/getUserRoles",
-                    "pmid": "01010000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01010500000000000000",
-                    "mname": "禁用",
-                    "path": "/user/setUserState",
-                    "pmid": "01010000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01010300000000000000",
-                    "mname": "新增修改权限",
-                    "path": "/user/save,/channel_subject/.*",
-                    "pmid": "01010000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01010100000000000000",
-                    "mname": "新增",
-                    "ordernum": 0,
-                    "path": "cmdAdd",
-                    "pmid": "01010000000000000000",
-                    "state": "0",
-                    "type": "BUTTON"
-                }
-            ]
-        },
-        {
-            "level": 2,
-            "logs": "1",
-            "mid": "01040000000000000000",
-            "mname": "平台角色",
-            "ordernum": 3,
-            "path": "",
-            "pmid": "01000000000000000000",
-            "router": "/role",
-            "state": "1",
-            "type": "URL",
-            "children": [
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01040300000000000000",
-                    "mname": "编辑",
-                    "path": "/role/getRoleByRid/.*,/role/save",
-                    "pmid": "01040000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01040100000000000000",
-                    "mname": "查询",
-                    "path": "/role/query",
-                    "pmid": "01040000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01040400000000000000",
-                    "mname": "禁用",
-                    "path": "/role/setRoleState",
-                    "pmid": "01040000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01040200000000000000",
-                    "mname": "新增",
-                    "path": "/role/getModuleTree,/role/addRole",
-                    "pmid": "01040000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                }
-            ]
-        },
-        {
-            "level": 2,
-            "logs": "0",
-            "mid": "01050000000000000000",
-            "mname": "功能模块",
-            "ordernum": 4,
-            "path": "",
-            "pmid": "01000000000000000000",
-            "router": "/module",
-            "state": "1",
-            "type": "URL",
-            "children": [
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01050400000000000000",
-                    "mname": "禁用",
-                    "path": "/module/setModuleState",
-                    "pmid": "01050000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01050500000000000000",
-                    "mname": "新增编辑",
-                    "path": "/module/save",
-                    "pmid": "01050000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                },
-                {
-                    "level": 3,
-                    "logs": "0",
-                    "mid": "01050100000000000000",
-                    "mname": "查询",
-                    "path": "/module/query",
-                    "pmid": "01050000000000000000",
-                    "router": "",
-                    "state": "1",
-                    "type": "HIDDEN"
-                }
-            ]
-        },
-        {
-            "level": 2,
-            "logs": "0",
-            "mid": "01070000000000000000",
-            "mname": "ip白名单管理",
-            "path": "/dashboard/authIp,/dashboard/getIpList,/dashboard/insertIp,/dashboard/updateIp",
-            "pmid": "01000000000000000000",
-            "router": "/lt/ipAuth",
-            "state": "1",
-            "type": "URL"
-        }
-    ]
-}]
-      
     },
     "posts": [
         {
